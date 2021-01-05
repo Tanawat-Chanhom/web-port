@@ -1,0 +1,53 @@
+.container {
+  border: 1px solid white !important;
+  width: 100% !important;
+  max-width: 700px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  position: relative !important;
+  background-color: unset !important;
+  margin: 20px !important;
+  padding: 10px !important;
+  transition: all 1 ease !important;
+}
+
+.container:hover {
+  transition: all 1 ease !important;
+  transform-style: preserve-3d;
+}
+
+.imageWapper {
+  position: relative;
+  background-color: #b24747;
+  width: 75%;
+  padding-top: 30%;
+  border: 1px solid white;
+  transform: translateZ(30px);
+  transform-style: preserve-3d;
+}
+
+.textContainer {
+  position: relative;
+  width: fit-content;
+  margin: 30px 0px;
+  transform: translateZ(40px) translateX(-50%);
+}
+
+.textContainer p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.outline {
+  -webkit-text-stroke: #ffffff 2px;
+  color: #ffffff00 !important;
+}
+
+/* ---- FONTS ---- */
+.proFont {
+  font-family: "ProFont_For_Powerline";
+}
+.drukWideFont {
+  font-family: "Druk_Wide_Bold";
+}
+/* ---- FONTS ---- */

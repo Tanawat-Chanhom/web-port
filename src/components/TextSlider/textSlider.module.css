@@ -1,0 +1,48 @@
+.container {
+  border-top: 8px;
+  border-bottom: 8px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #d9d9da;
+  padding: 30px 0px;
+}
+
+.sliderText {
+  font-size: 80px;
+  -webkit-text-stroke: 5px #d9d9da;
+  color: rgba(255, 255, 255, 0);
+}
+
+.sliderText:hover {
+  -webkit-text-stroke: unset;
+  color: #d9d9da;
+  font-style: italic;
+}
+
+.textContainer span {
+  position: relative;
+  white-space: nowrap;
+  animation-name: sliderAnimation;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sliderAnimation {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+/* ---- FONTS ---- */
+.proFont {
+  font-family: "ProFont_For_Powerline";
+}
+.drukWideFont {
+  font-family: "Druk_Wide_Bold";
+}
+/* ---- FONTS ---- */

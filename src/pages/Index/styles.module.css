@@ -1,0 +1,209 @@
+/* sectionOne */
+
+.sectionOne {
+  /* border: 1px solid white; */
+  height: 100vh;
+  width: 100vw;
+  max-height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.backgroundContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border: 1px solid white; */
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundRotate {
+  position: absolute;
+  transform: rotateZ(-45deg);
+}
+
+.backgroundText {
+  font-size: 300px;
+  color: #707070;
+}
+
+.outline {
+  -webkit-text-stroke: #707070 5px;
+  color: #ffffff00 !important;
+}
+
+.quoteContainer {
+  margin-left: 60px;
+  align-self: center;
+  height: fit-content;
+  width: 100%;
+  /* background-color: #803939; */
+  overflow: hidden;
+}
+
+.mainQuote {
+  font-size: 140px;
+  color: #d9d9d9;
+  white-space: nowrap;
+}
+
+.titleCard {
+  margin: 60px !important;
+  padding: 0px !important;
+  background-color: #70707000 !important;
+  width: 310px !important;
+  box-shadow: none !important;
+}
+
+.webDeveloperBox {
+  background-color: #284b63a1;
+  width: 270px;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 5px 20px;
+  transition: transform 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.webDeveloperBox:hover {
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.281);
+  transform: scale(1.1);
+}
+
+.scrollSignContainer {
+  position: absolute;
+  /* border: 2px solid white; */
+  height: 170px;
+  width: 170px;
+  align-self: flex-end;
+  right: 0%;
+  margin: 60px;
+  border-radius: 100em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.scrollSign {
+  width: 40px;
+  height: 70px;
+  border: 3px solid white;
+  background-color: #ffffff11;
+  border-radius: 100em;
+  display: flex;
+}
+
+.scrollSign span {
+  position: relative;
+  height: 15px;
+  width: 3px;
+  border-radius: 100em;
+  background-color: white;
+  top: 50%;
+  margin: 0 auto;
+
+  animation-name: scrollDot;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes scrollDot {
+  0% {
+    top: 40%;
+  }
+  /* 25% {
+    top: 40%;
+  } */
+  50% {
+    top: 60%;
+  }
+  75% {
+    top: 60%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+.scrollText {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  animation-name: scrollTextAnimation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.scrollText div {
+  position: absolute;
+  height: 50%;
+  width: fit-content;
+  transform-origin: center bottom;
+}
+
+@keyframes scrollTextAnimation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* sectionOne */
+
+/* sectionTwo */
+
+.sectionTwo {
+  width: 100vw;
+  padding: 80px 60px;
+}
+
+.aboutContent {
+  color: #d9d9d9;
+  font-size: 90px;
+  font-weight: bold;
+  width: 95%;
+}
+
+.skillTitleText {
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 5px #d9d9da;
+  margin-top: 100px;
+}
+
+/* sectionTwo */
+
+/* sectionThree */
+
+.sectionThree {
+  border: 1px solid white;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* sectionThree */
+
+/* ---- FONTS ---- */
+.proFont {
+  font-family: "ProFont_For_Powerline";
+}
+.drukWideFont {
+  font-family: "Druk_Wide_Bold";
+}
+/* ---- FONTS ---- */
