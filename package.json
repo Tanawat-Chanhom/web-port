@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "aos": "^3.0.0-beta.6",
     "gsap": "^3.5.1",
+    "hover-effect": "^1.1.0",
     "kursor": "^0.1.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

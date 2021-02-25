@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react";
 import useWindowSize from "./hooks/useWindowSize";
 import catTyping from "./assets/images/Cat_typing.gif";
 import Index from "./pages/Index/index";
-import kursor from "kursor";
+// import kursor from "kursor";
 
 function App() {
   //HOOK
@@ -21,7 +21,7 @@ function App() {
   }, [size.height]);
 
   useEffect(() => {
-    Kursor();
+    // Kursor();
     requestAnimationFrame(() => {
       skewScrolling();
     });
@@ -29,7 +29,7 @@ function App() {
 
   //Skew Scrolling Configs
   const skewConfigs = {
-    ease: 0.2,
+    ease: 0.1,
     current: 0,
     previous: 0,
     rounded: 0,
@@ -45,7 +45,7 @@ function App() {
     const difference = skewConfigs.current - skewConfigs.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 7.5;
+    const skew = velocity * 10;
 
     //Set Transform
     // skewContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px)`;
@@ -71,13 +71,13 @@ function App() {
     return "desktop";
   };
 
-  const Kursor = () => {
-    // new kursor({
-    //   el: ".myBox",
-    //   type: 1,
-    //   color: "#fff",
-    // });
-  };
+  // const Kursor = () => {
+  //   new kursor({
+  //     el: ".myBox",
+  //     type: 1,
+  //     color: "#fff",
+  //   });
+  // };
 
   return (
     <div ref={app} className="app myBox">
@@ -92,8 +92,8 @@ function App() {
       ) : (
         <div ref={skewContainer} className="skew-container myBox">
           <div className="not-subport-contianer">
-            <img src={catTyping} alt="image" />
-            <p>Not Subport Your Device.📵</p>
+            <image src={catTyping} alt="catTyping" />
+            <p>Not Support Your Device.📵</p>
           </div>
         </div>
       )}

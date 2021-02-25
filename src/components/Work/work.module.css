@@ -9,21 +9,26 @@
   margin: 20px !important;
   padding: 10px !important;
   transition: all 1 ease !important;
+  transform-style: preserve-3d;
 }
 
-.container:hover {
-  transition: all 1 ease !important;
-  transform-style: preserve-3d;
+.test {
+  width: 200px;
+  height: 200px;
+  border: white solid 2px;
 }
 
 .imageWapper {
   position: relative;
   background-color: #b24747;
-  width: 75%;
+  width: 100%;
   padding-top: 30%;
   border: 1px solid white;
   transform: translateZ(30px);
-  transform-style: preserve-3d;
+}
+
+.imageWapper:hover {
+  background-color: #5c5ee4;
 }
 
 .textContainer {
